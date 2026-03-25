@@ -1,0 +1,24 @@
+name: devops-scripts
+
+on:
+  push:
+    branches:
+      - dev
+      - main
+  pull_request:
+    branches:
+      - dev
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Run echo
+        run: echo "Hello from GitHub Actions!"
+      - name: Build
+        run: |
+          echo "Building..."
+          # Add your build steps here
