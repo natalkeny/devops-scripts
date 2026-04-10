@@ -1,0 +1,41 @@
+{
+  "status": "healthy",
+  "timestamp": "2024-01-26T10:00:00Z",
+  "service_name": "devops-scripts",
+  "version": "1.2.3",
+  "uptime_seconds": 3600,
+  "load_average": {
+    "1m": 0.1,
+    "5m": 0.05,
+    "15m": 0.01
+  },
+  "disk_space": {
+    "total_gb": 100,
+    "used_gb": 20,
+    "available_gb": 80
+  },
+  "memory": {
+    "total_mb": 4096,
+    "used_mb": 1024,
+    "free_mb": 3072
+  },
+  "network": {
+    "interfaces": [
+      {
+        "name": "eth0",
+        "rx_bytes": 1000000,
+        "tx_bytes": 500000
+      }
+    ]
+  },
+  "dependencies": [
+    {
+      "name": "database",
+      "status": "healthy"
+    },
+    {
+      "name": "cache",
+      "status": "healthy"
+    }
+  ]
+}
